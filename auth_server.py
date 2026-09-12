@@ -13,11 +13,11 @@ logger = logging.getLogger("authservice")
 app = Flask(__name__)
 
 SECRET_KEY  = os.environ.get("JWT_SECRET_KEY", "itkannadigaru-ekart-secret-key")
-DB_HOST     = "quntamvecror.crqai6ems4a2.ap-northeast-1.rds.amazonaws.com"
+DB_HOST     = "DB_HOST = "postgres.clqckga0y42l.us-west-2.rds.amazonaws.com""
 DB_PORT     = 5432
 DB_NAME     = "postgres"
 DB_USER     = "postgres"
-DB_PASSWORD = "Manoj7100"
+DB_PASSWORD = "Manoj99"
 DB_SSLCERT  = "/certs/global-bundle.pem"
 
 
