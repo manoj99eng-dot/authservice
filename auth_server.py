@@ -13,13 +13,12 @@ logger = logging.getLogger("authservice")
 app = Flask(__name__)
 
 SECRET_KEY = os.environ["JWT_SECRET_KEY"]
-DB_HOST     = "DB_HOST = "postgres.clqckga0y42l.us-west-2.rds.amazonaws.com""
-DB_PORT     = 5432
-DB_NAME     = "postgres"
-DB_USER     = "postgres"
-DB_PASSWORD = "Manoj999"
-DB_SSLCERT  = "/certs/global-bundle.pem"
-
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT", "5432")
+DB_NAME = os.getenv("DB_NAME", "postgres")
+DB_USER = os.getenv("DB_USER", "postgres")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_SSLCERT = os.getenv("DB_SSLCERT")
 
 def get_db():
     return psycopg2.connect(
