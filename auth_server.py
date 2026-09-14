@@ -12,7 +12,7 @@ logger = logging.getLogger("authservice")
 
 app = Flask(__name__)
 
-SECRET_KEY  = os.environ.get("JWT_SECRET_KEY", "itkannadigaru-ekart-secret-key")
+SECRET_KEY = os.environ["JWT_SECRET_KEY"]
 DB_HOST     = "DB_HOST = "postgres.clqckga0y42l.us-west-2.rds.amazonaws.com""
 DB_PORT     = 5432
 DB_NAME     = "postgres"
