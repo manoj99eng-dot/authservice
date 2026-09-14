@@ -17,7 +17,7 @@ DB_HOST     = "DB_HOST = "postgres.clqckga0y42l.us-west-2.rds.amazonaws.com""
 DB_PORT     = 5432
 DB_NAME     = "postgres"
 DB_USER     = "postgres"
-DB_PASSWORD = "Manoj99"
+DB_PASSWORD = "Manoj999"
 DB_SSLCERT  = "/certs/global-bundle.pem"
 
 
